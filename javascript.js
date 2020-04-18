@@ -63,7 +63,7 @@
     });
 
 map.on('load', function() {
-        map.loadImage( 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_location_on_48px-512.png',
+        map.loadImage( 'https://raw.githubusercontent.com/SvenLuttik/Challenge-3/master/images/landing_icon.png',
             function(error, image) {
                 if (error) throw error;
                 map.addImage('landing', image);
