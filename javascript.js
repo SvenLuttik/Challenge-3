@@ -61,3 +61,36 @@
             labelLayerId
         );
     });
+
+map.on('load', function() {
+        map.loadImage( 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_location_on_48px-512.png',
+            function(error, image) {
+                if (error) throw error;
+                map.addImage('landing', image);
+                map.addSource('point', {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [
+                            {
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [4.768893, 52.498374]
+                                }
+                            }
+                        ]
+                    }
+                });
+                map.addLayer({
+                    'id': 'points',
+                    'type': 'symbol',
+                    'source': 'point',
+                    'layout': {
+                        'icon-image': 'landing',
+                        'icon-size': 0.25
+                    }
+                });
+            }
+        );
+    });
