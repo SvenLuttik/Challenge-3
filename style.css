@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #000;
+	color: #95a5a6;
     background: #ecf0f3;
 }
 
@@ -12,8 +12,8 @@ h1 {
     margin: 30px auto;
 	text-align: center;
     border-radius: 40px;
-    box-shadow: 13px 13px 20px #cbced1,
-                -13px -13px 20px #ffffff;
+    box-shadow: 3px 3px 7px #cbced1,
+                -3px -3px 7px #ffffff;
 }
 
 main{
@@ -28,8 +28,8 @@ main{
     float: right;
 	color: #111;
     border-radius: 40px;
-    box-shadow: 13px 13px 20px #cbced1,
-                -13px -13px 20px #ffffff;
+    box-shadow: 3px 3px 7px #cbced1,
+                -3px -3px 7px #ffffff;
 }
 
 #map img {
@@ -42,13 +42,24 @@ main{
 }
 
 aside {
+    font-family: 'Open Sans', sans-serif;
     width: 20%;
     height: 500px;
     padding: 0px 20px;
     float: left;
     border-radius: 40px;
-    box-shadow: 13px 13px 20px #cbced1,
-                -13px -13px 20px #ffffff;
+    box-shadow: 3px 3px 7px #cbced1,
+                -3px -3px 7px #ffffff;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 7px #cbced1,
+                inset -3px -3px 7px #ffffff;
+}
+
+.container {
+    text-align: center;
 }
 
 canvas.mapboxgl-canvas {
