@@ -63,7 +63,7 @@
     });
 
 map.on('load', function() {
-        map.loadImage( 'https://raw.githubusercontent.com/SvenLuttik/Challenge-3/master/images/landing_icon.png',
+        map.loadImage( 'https://raw.githubusercontent.com/SvenLuttik/Challenge-3/master/images/marker.png',
             function(error, image) {
                 if (error) throw error;
                 map.addImage('landing', image);
