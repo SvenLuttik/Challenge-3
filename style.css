@@ -45,6 +45,7 @@ aside {
     font-family: 'Open Sans', sans-serif;
     width: 20%;
     height: 500px;
+    text-align: center;
     padding: 0px 20px;
     float: left;
     border-radius: 40px;
@@ -68,4 +69,49 @@ canvas.mapboxgl-canvas {
 
 .mapboxgl-ctrl-bottom-right {
     visibility: hidden;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input.inputTekst {
+    border: none;
+    border-radius: 40px;
+    height: 35px;
+    width: 90%;
+    padding: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #95a5a6;
+    margin: 5px auto 10px;
+    background: #ecf0f3;
+    box-shadow: inset 3px 3px 7px #cbced1,
+                inset -3px -3px 7px #ffffff;
+}
+
+::placeholder{
+    color: #bdc3c7;
+    font-style: italic;
+}
+
+input.knop {
+    border-radius: 40px;
+    border: none;
+    background: #ff6b81;
+    transition: 0.8s;
+    color: #ecf0f3;
+    height: 40px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: 10px auto;
+    box-shadow: 3px 3px 7px #ff95c6, 
+                -3px -3px 7px #ff9dc6;
+}
+
+input.knop:hover {
+    background: #eb4d4b;
+    transition: 0.8s;
 }
