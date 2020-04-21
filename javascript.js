@@ -73,7 +73,7 @@ map.on('load', function() {
                                 'type': 'Feature',
                                 'geometry': {
                                     'type': 'Point',
-                                    'coordinates': [4.768890, 52.498012]
+                                    'coordinates': [4.7687, 52.4980]
                                 }
                             }
                         ]

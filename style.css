@@ -120,7 +120,35 @@ input.knop:hover {
 
 /* --- tablet --- */
 @media (min-width: 600px) { 
-
+    h1{
+        width: 70%
+    }
+    
+    #map {
+        margin: 0 auto;
+        width: 85%;
+        height: 300px;
+        float: right;
+        color: #111;
+        border-radius: 40px;
+        box-shadow: 3px 3px 7px #cbced1,
+                    -3px -3px 7px #ffffff;
+    }
+    
+    input.inputTekst {
+        border: none;
+        border-radius: 40px;
+        height: 15px;
+        width: 90%;
+        padding: 5%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        color: #95a5a6;
+        margin: 5px auto 10px;
+        background: #ecf0f3;
+        box-shadow: inset 3px 3px 7px #cbced1,
+                    inset -3px -3px 7px #ffffff;
+    }
 }
 
 
@@ -172,5 +200,8 @@ input.knop:hover {
 
 /* --- desktop-large --- */
 @media (min-width: 1800px) { 
-
+    main{
+        1140px;
+        margin: 0 auto;
+    }
 }
