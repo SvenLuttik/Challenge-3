@@ -4,10 +4,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: #95a5a6;
     background: #ecf0f3;
+    width: 99%;
 }
 
 h1 {
-    width: 300px;
+    width: 200px;
     padding: 20px 60px;
     margin: 30px auto;
 	text-align: center;
@@ -18,14 +19,15 @@ h1 {
 
 main{
     width: 80%;
-    margin:auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #map {
 	margin: 0 auto;
-	width: 70%;
+	width: 100%;
 	height: 500px;
-    float: right;
 	color: #111;
     border-radius: 40px;
     box-shadow: 3px 3px 7px #cbced1,
@@ -43,11 +45,11 @@ main{
 
 aside {
     font-family: 'Open Sans', sans-serif;
-    width: 20%;
+    width: 80%;
+    margin: 40px auto;
     height: 500px;
     text-align: center;
     padding: 0px 20px;
-    float: left;
     border-radius: 40px;
     box-shadow: 3px 3px 7px #cbced1,
                 -3px -3px 7px #ffffff;
@@ -114,4 +116,61 @@ input.knop {
 input.knop:hover {
     background: #eb4d4b;
     transition: 0.8s;
+}
+
+/* --- tablet --- */
+@media (min-width: 600px) { 
+
+}
+
+
+/* --- desktop-small --- */
+@media (min-width: 1000px) {
+    h1{
+        width: 350px;
+    }
+    
+    main{
+        width: 80%;
+        margin:auto;
+        flex-direction: row;
+    }
+
+    #map {
+        margin: 0 auto;
+        width: 70%;
+        height: 500px;
+        float: right;
+        color: #111;
+        border-radius: 40px;
+        box-shadow: 3px 3px 7px #cbced1,
+                    -3px -3px 7px #ffffff;
+    }
+
+    #map img {
+        display: block;
+        margin: 2px 10px 10px 0;
+        float: left;
+        max-width: 100px;
+        border: 1px solid #333;
+        border-radius: 3px;
+    }
+
+    aside {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        width: 20%;
+        height: 500px;
+        text-align: center;
+        padding: 0px 20px;
+        float: left;
+        border-radius: 40px;
+        box-shadow: 3px 3px 7px #cbced1,
+                    -3px -3px 7px #ffffff;
+    }
+}
+
+/* --- desktop-large --- */
+@media (min-width: 1800px) { 
+
 }
